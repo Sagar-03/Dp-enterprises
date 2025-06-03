@@ -495,17 +495,26 @@ body {
     word-break: break-word; /* Ensure long words break onto the next line */
 }
 
+/* Special style for Certificates link */
+.box-image[style*="Certificate.jpg"] + .bottom-left-link {
+    font-size: 22px; /* Smaller font size just for the Certificates link */
+}
+.box-image[style*="WelcomeKit.jpg"] + .bottom-left-link {
+    font-size: 26px; /* Smaller font size just for the Certificates link */
+}
+
 
 .bottom-left-link:hover {
     transition: all 0.3s ease; /* Add this line to animate the changes */
 }
 /* .bottom-left-link:hover {
-    transform: scale(0.5); /* Add this line to make the text a little bigger on hover */
+    transform: scale(0.5); /* Add this line to make the text a little bigger on hover 
 } */
 
 .bottom-left-link .fa-arrow-right {
     margin-left: 5px; /* Optional: Add space between text and icon */
 }
+
 .box:hover {
     transform: scale(1.05); /* Add this line to make the box a little bigger on hover */
 }
