@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Mugs - DP Enterprises</title>
+    <link rel="stylesheet" href="../../Css/Visitingcard.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="../../images/logo.png" alt="DP Enterprises">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Products ▼</a>
+                        <div class="dropdown-content">
+                            <a href="Visitingcard.html">Visiting Cards</a>
+                            <a href="Letterheads.html">Letterheads</a>
+                            <a href="Envelopes.html">Envelopes</a>
+                            <a href="Brochure.html">Brochures</a>
+                            <a href="Flyers.html">Flyers</a>
+                            <a href="PocketFolders.html">Pocket Folders</a>
+                            <a href="Booklet.html">Booklets</a>
+                            <a href="Books.html">Books</a>
+                            <a href="Certificates.html">Certificates</a>
+                            <a href="ThankYouCards.html">Thank You Cards</a>
+                            <a href="Notebooks.html">Notebooks</a>
+                            <a href="Stamps.html">Stamps</a>
+                            <a href="MenuCard.html">Menu Cards</a>
+                            <a href="TShirt.html">T-Shirts</a>
+                            <a href="Mug.html">Custom Mugs</a>
+                        </div>
+                    </li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <input type="text" id="searchBox" placeholder="Search products...">
+                <button onclick="searchProducts()">🔍</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../index.html">Home</a> > <a href="#products">Products</a> > Custom Mugs
+            </div>
+
+            <div class="product-showcase">
+                <div class="product-info">
+                    <h1>Custom Printed Mugs</h1>
+                    <p>Personalized coffee mugs and drinkware for corporate gifts, promotional campaigns, and special occasions. High-quality printing that's dishwasher safe and long-lasting.</p>
+                    
+                    <div class="features">
+                        <h3>Features & Benefits:</h3>
+                        <ul>
+                            <li>Ceramic and stainless steel options</li>
+                            <li>Full-color photo printing capabilities</li>
+                            <li>Various sizes: 11oz, 15oz, travel mugs</li>
+                            <li>Dishwasher and microwave safe options</li>
+                            <li>Sublimation printing for vibrant colors</li>
+                            <li>Perfect for corporate branding</li>
+                            <li>Personalized gifts and employee recognition</li>
+                            <li>Event merchandise and giveaways</li>
+                            <li>Magic mugs that change with heat</li>
+                            <li>Bulk pricing for large orders</li>
+                        </ul>
+                    </div>
+
+                    <div class="cta-buttons">
+                        <button class="btn-primary" onclick="window.location.href='../contact.html'">Get Quote</button>
+                        <button class="btn-secondary" onclick="window.location.href='../contact.html'">Contact Us</button>
+                    </div>
+                </div>
+
+                <div class="product-images">
+                    <div class="main-image">
+                        <img id="mainImage" src="../../images/productimage/mug/Artboard 1.jpg" alt="Custom Printed Mugs">
+                    </div>
+                    <div class="thumbnail-container">
+                        <img class="thumbnail active" src="../../images/productimage/mug/Artboard 1.jpg" alt="Mug Design 1" onclick="changeImage(this.src)">
+                    </div>
+                </div>
+            </div>
+
+            <div class="specifications">
+                <h3>Specifications:</h3>
+                <div class="spec-grid">
+                    <div class="spec-item">
+                        <strong>Materials:</strong>
+                        <span>Ceramic, Stainless Steel, Glass</span>
+                    </div>
+                    <div class="spec-item">
+                        <strong>Sizes:</strong>
+                        <span>11oz, 15oz, Travel mug (16oz)</span>
+                    </div>
+                    <div class="spec-item">
+                        <strong>Printing:</strong>
+                        <span>Sublimation, Screen printing</span>
+                    </div>
+                    <div class="spec-item">
+                        <strong>Special Types:</strong>
+                        <span>Magic mugs, Photo mugs, Color changing</span>
+                    </div>
+                    <div class="spec-item">
+                        <strong>Minimum Order:</strong>
+                        <span>25 pieces</span>
+                    </div>
+                    <div class="spec-item">
+                        <strong>Delivery:</strong>
+                        <span>5-7 business days</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>DP Enterprises</h3>
+                    <p>Your trusted partner for all printing and promotional needs.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Products</h3>
+                    <ul>
+                        <li><a href="Visitingcard.html">Visiting Cards</a></li>
+                        <li><a href="Letterheads.html">Letterheads</a></li>
+                        <li><a href="Brochure.html">Brochures</a></li>
+                        <li><a href="Mug.html">Custom Mugs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>📍 Your Address Here</p>
+                    <p>📞 +91 XXXXXXXXXX</p>
+                    <p>✉️ info@dpenterprises.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 DP Enterprises. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const products = {
+            'visiting cards': 'Visitingcard.html',
+            'visitingcard': 'Visitingcard.html',
+            'letterheads': 'Letterheads.html',
+            'letterhead': 'Letterheads.html',
+            'envelopes': 'Envelopes.html',
+            'envelope': 'Envelopes.html',
+            'brochures': 'Brochure.html',
+            'brochure': 'Brochure.html',
+            'flyers': 'Flyers.html',
+            'flyer': 'Flyers.html',
+            'pocket folders': 'PocketFolders.html',
+            'pocketfolders': 'PocketFolders.html',
+            'booklets': 'Booklet.html',
+            'booklet': 'Booklet.html',
+            'books': 'Books.html',
+            'book': 'Books.html',
+            'certificates': 'Certificates.html',
+            'certificate': 'Certificates.html',
+            'thank you cards': 'ThankYouCards.html',
+            'thankyoucards': 'ThankYouCards.html',
+            'notebooks': 'Notebooks.html',
+            'notebook': 'Notebooks.html',
+            'stamps': 'Stamps.html',
+            'stamp': 'Stamps.html',
+            'menu cards': 'MenuCard.html',
+            'menucard': 'MenuCard.html',
+            't-shirts': 'TShirt.html',
+            'tshirt': 'TShirt.html',
+            'mugs': 'Mug.html',
+            'mug': 'Mug.html'
+        };
+
+        function searchProducts() {
+            const searchTerm = document.getElementById('searchBox').value.toLowerCase().trim();
+            
+            if (searchTerm === '') {
+                alert('Please enter a search term');
+                return;
+            }
+
+            const matchedProduct = products[searchTerm];
+            
+            if (matchedProduct) {
+                window.location.href = matchedProduct;
+            } else {
+                alert('Product not found. Available products: ' + Object.keys(products).join(', '));
+            }
+        }
+
+        document.getElementById('searchBox').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                searchProducts();
+            }
+        });
+
+        function changeImage(src) {
+            document.getElementById('mainImage').src = src;
+            
+            document.querySelectorAll('.thumbnail').forEach(thumb => {
+                thumb.classList.remove('active');
+            });
+            
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>
