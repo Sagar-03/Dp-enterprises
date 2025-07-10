@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DP Enterprises</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../Css/main.css">
+   
+</head>
+<body>
+    
+    <div class="whatsapp-icon">
+        <a href="https://wa.me/+918920951048" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+    <!-- Header -->
+    <nav>
+        <div class="logo">
+            <a href="index.html">
+                <img src="../images/logo.png" alt="logo" class="logo">
+            </a>
+        </div>
+    
+        <input type="checkbox" class="toggle-menu" id="burger">
+        <label for="burger">
+            <div class="hamburger"></div>
+        </label>
+    
+        <div class="head">
+            <a href="#" class="nav-link" style="text-decoration: none;">Home</a>
+            <div class="dropdown">
+                <a class="nav-link"  style="text-decoration: none;">Products</a>
+                <div class="dropdown-content">
+                   
+                    <a href="Products/Visitingcard.html">Visiting Cards</a>
+                    <a href="Products/Letterheads.html">Letter Heads</a>
+                    <a href="Products/Envelopes.html">Envelopes</a>
+                    <a href="Products/Books.html">Books</a>
+                    <a href="Products/Booklet.html">Booklet</a>
+                    <a href="Products/Brochure.html">Brochure</a>
+                    <a href="Products/Certificates.html">Certificates</a>
+                    <a href="Products/PocketFolders.html">Pocket Folders</a>
+                    <a href="Products/ThankYouCards.html">Thank You Cards</a>
+                    <a href="Products/LabelSticker.html">Label & Sticker</a>
+                    <a href="Products/PVCSticker.html">PVC Sticker</a>
+                    <a href="Products/VinylSticker.html">Vinyl Sticker</a>
+                    <a href="Products/Flyers.html">Flyers</a>
+                    <a href="Products/MenuCard.html">Menu Card</a>
+                    <a href="Products/PosterA3.html">Poster A3</a>
+                    <a href="Products/TentCard.html">Tent Card</a>
+                    <a href="Products/Calendar.html">Calendar</a>
+                    <a href="Products/TableCalendar.html">Table Calendar</a>
+                    <a href="Products/PackagingBox.html">Packaging Box</a>
+                    <a href="Products/WeddingInvitations.html">Wedding Invitations</a>
+                    <a href="Products/BillBooks.html">Bill Books</a>
+                    <a href="Products/CashVouchers.html">Cash Vouchers</a>
+                    <a href="Products/ChallanBook.html">Challan Book</a>
+                    <a href="Products/PamphletBW.html">Pamphlet B/W</a>
+                    <a href="Products/Notebooks.html">Notebooks</a>
+                    <a href="Products/Pen.html">Pen</a>
+                    <a href="Products/Diary.html">Diary</a>
+                    <a href="Products/TShirt.html">T-Shirt</a>
+                    <a href="Products/Caps.html">Caps</a>
+                    <a href="Products/CorporateGifts.html">Corporate Gifts</a>
+                    <a href="Products/KeyRings.html">Key Rings</a>
+                    <a href="Products/Shippers.html">Shippers</a>
+                    <a href="Products/Mugs.html">Mugs</a>
+                    <a href="Products/Lanyards.html">Lanyards</a>
+                    <a href="Products/IDCards.html">ID Cards</a>
+                    <a href="Products/CarryBags.html">Carry Bags</a>
+                    <a href="Products/Awards.html">Awards</a>
+                    <a href="Products/Stamps.html">Stamps</a>
+                    <a href="Products/Tag.html">Tag</a>
+                    <a href="Products/FlexBanner.html">Flex/Banner</a>
+                    <a href="Products/Canopy.html">Canopy</a>
+                    <a href="Products/GlassFrostedFilm.html">Glass Frosted Film</a>
+                    <a href="Products/GlowSignBoard.html">Glow Sign Board</a>
+                    <a href="Products/OneWayVision.html">One Way Vision</a>
+                    <a href="Products/Standy.html">Standy</a>
+                    <a href="Products/BrandingVinyl.html">Branding Vinyl</a>
+                    <a href="Products/Backdrop.html">Backdrop</a>
+                    <a href="Products/Sunboard.html">Sunboard</a>
+                    <a href="Products/AcrylicVinylBoard.html">Acrylic Vinyl Board</a>
+                    <a href="Products/Canvas.html">Canvas</a>
+                    <a href="Products/Nameplate.html">Name Plate</a>
+                    <a href="Products/Clipon.html">Clipon</a>                    
+            </div>
+            </div>
+            <a href="about.html" class="nav-link" style="text-decoration: none;">About Us</a>
+            <a href="contact.html" class="nav-link"  style="text-decoration: none;">Contact Us</a>
+        </div>
+    
+        <div class="search-container">
+            <div class="search-icon" id="search-icon">&#128269;</div>
+            <input type="text" id="search-input" placeholder="Search products..." autocomplete="off">
+            <div id="suggestions"></div>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <img src="../images/hero.jpg" alt="PrintingSolution">
+    </div>
+
+    <!-- Slider1
+
+     <div class="slider1-container">
+        <div class="text">All Printing Solution In One Click Only....</div>    
+    <div class="slides1">
+        <div class="slide1"><img src="../images/boximage/1.png" alt="Image 1"></div>
+        <div class="slide1"><img src="../images/boximage/2.png" alt="Image 2"></div>
+        <div class="slide1"><img src="../images/boximage/3.png" alt="Image 3"></div>
+        <div class="slide1"><img src="../images/boximage/4.png" alt="Image 4"></div>
+        <div class="slide1"><img src="../images/boximage/5.png" alt="Image 5"></div>
+        <div class="slide1"><img src="../images/boximage/6.png" alt="Image 1"></div>
+        <div class="slide1"><img src="../images/boximage/7.png" alt="Image 2"></div>
+        <div class="slide1"><img src="../images/boximage/8.png" alt="Image 3"></div>
+        <div class="slide1"><img src="../images/boximage/1.png" alt="Image 4"></div>
+        <div class="slide1"><img src="../images/boximage/visitingcard.jpg" alt="Image 5"></div>
+    </div>
+</div> -->
+    <!-- Slider -->
+
+    <div class="centered-heading">
+        <h2 class="lined-heading">Browse All Categories</h2>
+    </div>
+    <div class="slider">
+        <div class="slide-track">
+            <div class="slide">
+                <img src="../images/smallslider/visitingcard.jpg" alt="Visiting Card">
+                <p>Visiting Cards</p>
+            </div>
+            <div class="slide">
+                <img src="../images/smallslider/letterhead.png" alt="Letterhead">
+                <p>Letterhead</p>
+            </div>
+            <div class="slide">
+                <img src="../images/smallslider/envelope.jpg" alt="Envelope">
+                <p>Envelope</p>
+            </div>
+            <div class="slide">
+                <img src="../images/smallslider/book.png" alt="Books">
+                <p>Books</p>
+            </div>
+            <div class="slide">
+                <img src="../images/smallslider/booklet.jpg" alt="Booklet">
+                <p>Booklet</p>
+            </div>
+            <div class="slide">
+                <img src="../images/smallslider/broucher.jpg" alt="brochers">
+                <p>Brouchers</p>
+            </div>
+            <div class="slide">
+                <img src="../images/smallslider/certificate.jpg" alt="Certificates">
+                <p>Certificates</p>
+            </div>
+            <div class="slide">
+                <img src="../images/smallslider/pocketfolder.jpg" alt="Pocketfolder">
+                <p>Pocketfolder</p>
+            </div>
+            <div class="slide">
+                <img src="../images/smallslider/thankyoucard.jpg" alt="thankyoucard">
+                <p>Thankyou Card</p>
+            </div>
+            <div class="slide">
+                <img src="../images/smallslider/sticker.jpg" alt="Sticker">
+                <p>Stickers</p>
+            </div>
+            <div class="slide">
+                <img src="../images/smallslider/flyer.jpg" alt="Flyers">
+                <p>Flyers</p>
+            </div>
+            <div class="slide">
+                <img src="../images/smallslider/menucard.jpg" alt="Menu Cards">
+                <p>Menu Cards</p>
+            </div>
+            <div class="slide">
+                <img src="../images/smallslider/posterA3.png" alt="Poster A3">
+                <p>A3 Poster</p>
+            </div>
+            <div class="slide">
+                <img src="../images/smallslider/tentcard.jpg" alt="Tent Cards">
+                <p>TentCards</p>
+            </div>
+            <div class="slide">
+                <img src="../images/smallslider/calendar.jpg" alt="Calenders">
+                <p>Calenders</p>
+            </div>
+            <div class="slide">
+                <img src="../images/smallslider/cashvouchers.png" alt="Cash Vouchers">
+                <p>Cash Vouchers</p>
+            </div>
+            <div class="slide">
+                <img src="../images/smallslider/packagingbox.jpg" alt="Packaging Boxes">
+                <p>Packaging Boxes</p>
+            </div>
+            <div class="slide">
+                <img src="../images/smallslider/weddingcard.jpg" alt="Weding Invitations">
+                <p>Weding Invitations</p>
+            </div>
+            <div class="slide">
+                <img src="../images/smallslider/billbook.jpg" alt="Bill Book">
+                <p>Bill Book</p>
+            </div>
+            <div class="slide">
+                <img src="../images/smallslider/cashvouchers.png" alt="Cash Vouchers">
+                <p>Cash Vouchers</p>
+            </div>
+            <div class="slide">
+                <img src="../images/smallslider/challanbook.jpg" alt="Challan Books">
+                <p>Challan Books</p>
+            </div>
+            <div class="slide">
+                <img src="../images/smallslider/pamplet.jpg" alt="Pamplet">
+                <p>Pamplet</p>
+            </div>
+        </div>
+        <button class="slide-btn prev-btn" id="prevBtn">
+            <svg viewBox="0 0 24 24">
+                <path d="M15 19l-7-7 7-7"/>
+            </svg>
+        </button>
+        <button class="slide-btn next-btn" id="nextBtn">
+            <svg viewBox="0 0 24 24">
+                <path d="M9 5l7 7-7 7"/>
+            </svg>
+        </button>
+    </div>
+
+  <!--Boxes-->
+
+  <div class="centered-heading">
+    <h2 class="lined-heading">Popular Products</h2>
+</div>
+<div class="box-container">
+    <div class="box">
+        <div class="box-image" style="background-image: url('../images/boximage/visitingcard.jpg');"></div>
+        <a href="https://example.com" class="bottom-left-link">Visiting<br>Cards</a>
+    </div>
+    <div class="box">
+        <div class="box-image" style="background-image: url('../images/boximage/WelcomeKit.jpg');"></div>
+        <a href="https://example.com" class="bottom-left-link">Welcome<br>Kit</a>
+    </div>
+    <div class="box">
+        <div class="box-image" style="background-image: url('../images/boximage/Tshirt.jpg');"></div>
+        <a href="https://example.com" class="bottom-left-link">T-shirt</a>
+    </div>
+    <div class="box">
+        <div class="box-image" style="background-image: url('../images/boximage/WeddingCard.jpg');"></div>
+        <a href="https://example.com" class="bottom-left-link">Wedding<br>Card</a>
+    </div>
+    <div class="box">
+        <div class="box-image" style="background-image: url('../images/boximage/Keychain.jpg');"></div>
+        <a href="https://example.com" class="bottom-left-link">Keychain</a>
+    </div>
+    <div class="box">
+        <div class="box-image" style="background-image: url('../images/boximage/Notebook.jpg');"></div>
+        <a href="https://example.com" class="bottom-left-link">Notebooks</a>
+    </div>
+    <div class="box">
+        <div class="box-image" style="background-image: url('../images/boximage/Certificate.jpg');"></div>
+        <a href="https://example.com" class="bottom-left-link">Certificates</a>
+    </div>
+    <div class="box">
+        <div class="box-image" style="background-image: url('../images/boximage/Poster.jpg');"></div>
+        <a href="https://example.com" class="bottom-left-link">Posters</a>
+    </div>
+    <div class="box">
+        <div class="box-image" style="background-image: url('../images/boximage/Stickers.jpg');"></div>
+        <a href="https://example.com" class="bottom-left-link">Stickers</a>
+    </div>
+    <div class="box">
+        <div class="box-image" style="background-image: url('../images/boximage/Pamplet.jpg');"></div>
+        <a href="https://example.com" class="bottom-left-link">Pamphlet</a>
+    </div>
+    <!-- <div class="box">
+        <div class="box-image" style="background-image: url('../images/boximage/ChallanBook.jpg');"></div>
+        <a href="https://example.com" class="bottom-left-link">Challan<br>Book</a>
+    </div> -->
+    <div class="box">
+        <div class="box-image" style="background-image: url('../images/boximage/Stamp.jpg');"></div>
+        <a href="https://example.com" class="bottom-left-link">Stamps</a>
+    </div>
+    <div class="box">
+        <div class="box-image" style="background-image: url('../images/boximage/Tabletentcard.jpg');"></div>
+        <a href="https://example.com" class="bottom-left-link">Tent Cards</a>
+    </div>
+</div>
+
+</div>
+ <!--Footer-->
+ <!--Footer-->
+
+ <footer>
+    <div class="container">
+        <div class="row">
+            <div class="logo-container">
+                <img class="footerlogo" src="../images/logo.png" alt="logo">
+                <p>DP Enterprises is the leading corporate clothing, gifting branding and Printing solutions
+                    provider in India and well-known for transforming the businesses into 'brands'.</p>
+            </div>
+            <div class="Links">
+                <h5>Links</h5>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="contacts">
+                <h5>Contact Us</h5>
+                <br>
+                <b> Office : </b> 
+                <a href="https://www.google.com/maps/place/Printing+press+(D.P.+Enterprises)/@28.5904351,77.3326175,17z/data=!3m1!4b1!4m6!3m5!1s0x390ce5664b0724fb:0xf9b447a367992da4!8m2!3d28.5904351!4d77.3351924!16s%2Fg%2F11h0gy_yz8?entry=ttu&g_ep=EgoyMDI0MDgyMy4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank" class="location-link">
+                D-21, D Block, Sector 10, Noida, Uttar Pradesh (201301)<br>
+               </a>
+                </p>
+                <p><b>Phone:</b> 8920951048, 9310175062<br>
+
+                   <b> Email Id: </b><a href="mailto:identity2110@gmail.com">identity2110@gmail.com </a></p>
+            </div>
+        </div>
+
+        <!-- <div class="row2">
+                <p class="copyright">Copyright &copy; 2024 Dp Enterprises</p>
+        </div> -->
+</footer>
+<script src="main.js"></script>
+</html>
+
+</body>
