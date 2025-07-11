@@ -3,33 +3,281 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Standy - DP Enterprises</title>
+    <title>Standees - Professional Stand Banners | DP Enterprises</title>
+    <meta name="description" content="Professional standees and stand banners for events, promotions, and advertising. Custom printing, portable designs, and eye-catching displays at DP Enterprises.">
+    <meta name="keywords" content="standees, stand banners, promotional displays, event stands, advertising standees, portable banners, custom standees">
     <link rel="stylesheet" href="../../Css/Visitingcard.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
     <div class="whatsapp-icon">
-        <a href="https://wa.me/+919911322519" target="_blank">
+        <a href="https://wa.me/+919911322519" target="_blank" aria-label="Contact us on WhatsApp">
             <i class="fab fa-whatsapp"></i>
         </a>
     </div>
-    <main>
-        <!-- Navigation copied from Visitingcard.html -->
-        <!-- ...existing code... -->
-        <section class="product-section">
-            <h1>Standy</h1>
-            <div class="slider">
-                <img src="../../images/productimage/standee/Artboard 1.jpg" alt="Standy 1">
-                <img src="../../images/productimage/standee/Artboard 2.jpg" alt="Standy 2">
+
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="../../images/logo.png" alt="DP Enterprises Logo">
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Products <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="Visitingcard.html">Visiting Cards</a>
+                            <a href="Brochure.html">Brochures</a>
+                            <a href="Flyers.html">Flyers</a>
+                            <a href="Letterheads.html">Letterheads</a>
+                            <a href="Envelopes.html">Envelopes</a>
+                            <a href="BillBook.html">Bill Books</a>
+                            <a href="Notebooks.html">Notebooks</a>
+                            <a href="Calendar.html">Calendars</a>
+                            <a href="Poster.html">Posters</a>
+                            <a href="Banner.html">Banners</a>
+                            <a href="Standy.html">Standees</a>
+                            <a href="TShirt.html">T-Shirts</a>
+                            <a href="Mugs.html">Mugs</a>
+                            <a href="PVCSticker.html">PVC Stickers</a>
+                            <a href="VinylSticker.html">Vinyl Stickers</a>
+                        </div>
+                    </li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+                <div class="search-container">
+                    <input type="text" placeholder="Search products..." id="searchInput">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
-            <ul>
-                <li>Portable standees for events and promotions</li>
-                <li>Lightweight, easy to set up and transport</li>
-                <li>Custom sizes and vibrant printing</li>
-            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Banner Section -->
+        <section class="banner-section">
+            <div class="banner-image">
+                <img src="../../images/Banner/standy.jpg" alt="Professional Standees and Stand Banners">
+                <div class="banner-overlay">
+                    <h1>Professional Standees</h1>
+                    <p>Portable and Eye-Catching Display Solutions</p>
+                </div>
+            </div>
         </section>
-        <!-- ...existing code... -->
+
+        <!-- Product Section -->
+        <section class="product-section">
+            <div class="container">
+                <h2>Premium Standees & Stand Banners</h2>
+                
+                <!-- Image Slider -->
+                <div class="product-slider">
+                    <div class="slider-container">
+                        <img src="../../images/productimage/standee/Standee.jpg" alt="Professional Standee Display" class="active">
+                        <img src="../../images/productimage/standee/Artboard 6.jpg" alt="Custom Standee Design">
+                        <img src="../../images/productimage/standee/Artboard 7.jpg" alt="Event Standee Banner">
+                        <img src="../../images/productimage/standee/Artboard 8.jpg" alt="Promotional Standee">
+                        <img src="../../images/productimage/standee/Artboard 9.jpg" alt="Advertising Standee">
+                        <img src="../../images/productimage/standee/Artboard 10.jpg" alt="Trade Show Standee">
+                    </div>
+                    <button class="slider-btn prev-btn" onclick="changeSlide(-1)">&#10094;</button>
+                    <button class="slider-btn next-btn" onclick="changeSlide(1)">&#10095;</button>
+                    <div class="slider-dots">
+                        <span class="dot active" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(5)"></span>
+                        <span class="dot" onclick="currentSlide(6)"></span>
+                    </div>
+                </div>
+
+                <!-- Product Information -->
+                <div class="product-info">
+                    <div class="info-grid">
+                        <div class="info-card">
+                            <h3><i class="fas fa-eye"></i> Eye-Catching Displays</h3>
+                            <p>Professional standees designed to grab attention and effectively showcase your brand, products, or services at events, trade shows, and retail locations.</p>
+                        </div>
+                        <div class="info-card">
+                            <h3><i class="fas fa-mobile-alt"></i> Portable Design</h3>
+                            <p>Lightweight and easy-to-transport standees with convenient setup mechanisms. Perfect for traveling to different venues and events.</p>
+                        </div>
+                        <div class="info-card">
+                            <h3><i class="fas fa-palette"></i> Custom Graphics</h3>
+                            <p>High-quality digital printing with vibrant colors and sharp details. Fully customizable designs to match your brand identity and marketing goals.</p>
+                        </div>
+                        <div class="info-card">
+                            <h3><i class="fas fa-tools"></i> Easy Setup</h3>
+                            <p>Quick and tool-free assembly in minutes. Sturdy construction ensures stability while remaining user-friendly for frequent setup and takedown.</p>
+                        </div>
+                    </div>
+
+                    <div class="features-section">
+                        <h3>Product Features</h3>
+                        <div class="features-grid">
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Multiple sizes available (24"x36", 30"x72", 33"x79")</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Durable materials resistant to wear and tear</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Weather-resistant for outdoor use</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Professional carrying case included</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Double-sided printing option available</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Anti-curl technology for flat display</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="applications-section">
+                        <h3>Perfect For</h3>
+                        <ul class="applications-list">
+                            <li><i class="fas fa-store"></i> Retail promotions and product launches</li>
+                            <li><i class="fas fa-handshake"></i> Trade shows and exhibitions</li>
+                            <li><i class="fas fa-calendar-alt"></i> Corporate events and conferences</li>
+                            <li><i class="fas fa-graduation-cap"></i> Educational presentations</li>
+                            <li><i class="fas fa-bullhorn"></i> Marketing campaigns and advertising</li>
+                            <li><i class="fas fa-building"></i> Lobby and reception area displays</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <div class="container">
+                <h2>Get Your Custom Standees Today</h2>
+                <p>Ready to create impressive displays that attract attention and drive results? Contact our design team for professional standee solutions.</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 99113 22519</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@dpenterprises.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>WhatsApp: +91 99113 22519</span>
+                    </div>
+                </div>
+                <a href="../contact.html" class="cta-button">Request Quote</a>
+            </div>
+        </section>
+
+        <!-- Related Images Gallery -->
+        <section class="gallery-section">
+            <div class="container">
+                <h2>Our Standee Portfolio</h2>
+                <div class="image-gallery">
+                    <div class="gallery-item">
+                        <img src="../../images/productimage/standee/Standee.jpg" alt="Professional Standee Display">
+                        <div class="gallery-overlay">
+                            <h4>Professional Display</h4>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../../images/productimage/standee/Artboard 6.jpg" alt="Custom Standee Design">
+                        <div class="gallery-overlay">
+                            <h4>Custom Design</h4>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../../images/productimage/standee/Artboard 7.jpg" alt="Event Standee Banner">
+                        <div class="gallery-overlay">
+                            <h4>Event Banner</h4>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../../images/productimage/standee/Artboard 8.jpg" alt="Promotional Standee">
+                        <div class="gallery-overlay">
+                            <h4>Promotional Display</h4>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../../images/productimage/standee/Artboard 9.jpg" alt="Advertising Standee">
+                        <div class="gallery-overlay">
+                            <h4>Advertising Banner</h4>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../../images/productimage/standee/Artboard 10.jpg" alt="Trade Show Standee">
+                        <div class="gallery-overlay">
+                            <h4>Trade Show Display</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>DP Enterprises</h3>
+                <p>Your trusted partner for all printing and promotional solutions. Quality products, professional service, and competitive prices.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../about.html">About Us</a></li>
+                    <li><a href="Visitingcard.html">Products</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Popular Products</h4>
+                <ul>
+                    <li><a href="Visitingcard.html">Visiting Cards</a></li>
+                    <li><a href="Brochure.html">Brochures</a></li>
+                    <li><a href="Banner.html">Banners</a></li>
+                    <li><a href="Standy.html">Standees</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <div class="contact-details">
+                    <p><i class="fas fa-phone"></i> +91 99113 22519</p>
+                    <p><i class="fas fa-envelope"></i> info@dpenterprises.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Your Business Address</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 DP Enterprises. All rights reserved. | Designed for professional printing solutions.</p>
+        </div>
+    </footer>
+
     <script src="../main.js"></script>
 </body>
 </html>

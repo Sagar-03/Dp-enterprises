@@ -87,59 +87,63 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
  // <!--Search box js-->
+ // Detect if we're on index.html or a product page
+ const isIndexPage = window.location.pathname.includes('index.html') || window.location.pathname.endsWith('/');
+ const productBasePath = isIndexPage ? 'html/Products/' : '';
+ 
  const products = {
-    "visiting cards": "html/Products/Visitingcard.html",
- "letter heads": "html/Products/Letterheads.html",
- "envelopes": "html/Products/Envelopes.html",
- "books": "html/Products/Books.html",
- "booklet": "html/Products/Booklet.html",
- "brochure": "html/Products/Brochure.html",
- "certificates": "html/Products/Certificates.html",
- "pocket folders": "html/Products/PocketFolders.html",
- "thank you cards": "html/Products/ThankYouCards.html",
- "label & sticker": "html/Products/LabelSticker.html",
- "pvc sticker": "html/Products/PVCSticker.html",
- "vinyl sticker": "html/Products/VinylSticker.html",
- "flyers": "html/Products/Flyers.html",
- "menu card": "html/Products/MenuCard.html",
- "poster a3": "html/Products/PosterA3.html",
- "tent card": "html/Products/TentCard.html",
- "calendar": "html/Products/Calendar.html",
- "table calendar": "html/Products/TableCalendar.html",
- "packaging box": "html/Products/PackagingBox.html",
- "wedding invitations": "html/Products/WeddingInvitations.html",
- "bill books": "html/Products/BillBooks.html",
- "cash vouchers": "html/Products/CashVouchers.html",
- "challan book": "html/Products/ChallanBook.html",
- "pamphlet b/w": "html/Products/PamphletBW.html",
- "notebooks": "html/Products/Notebooks.html",
- "pen": "html/Products/Pen.html",
- "diary": "html/Products/Diary.html",
- "t-shirt": "html/Products/TShirt.html",
- "caps": "html/Products/Caps.html",
- "corporate gifts": "html/Products/CorporateGifts.html",
- "key rings": "html/Products/KeyRings.html",
- "shippers": "html/Products/Shippers.html",
- "mugs": "html/Products/Mugs.html",
- "lanyards": "html/Products/Lanyards.html",
- "id cards": "html/Products/IDCards.html",
- "carry bags": "html/Products/CarryBags.html",
- "awards": "html/Products/Awards.html",
- "stamps": "html/Products/Stamps.html",
- "tag": "html/Products/Tag.html",
- "flex/banner": "html/Products/FlexBanner.html",
- "canopy": "html/Products/Canopy.html",
- "glass frosted film": "html/Products/GlassFrostedFilm.html",
- "glow sign board": "html/Products/GlowSignBoard.html",
- "one way vision": "html/Products/OneWayVision.html",
- "standy": "html/Products/Standy.html",
- "branding vinyl": "html/Products/BrandingVinyl.html",
- "backdrop": "html/Products/Backdrop.html",
- "sunboard": "html/Products/Sunboard.html",
- "acrylic vinyl board": "html/Products/AcrylicVinylBoard.html",
- "canvas": "html/Products/Canvas.html",
- "name plate": "html/Products/Nameplate.html",
- "clipon": "html/Products/Clipon.html"
+    "visiting cards": productBasePath + "Visitingcard.html",
+ "letter heads": productBasePath + "Letterheads.html",
+ "envelopes": productBasePath + "Envelopes.html",
+ "books": productBasePath + "Books.html",
+ "booklet": productBasePath + "Booklet.html",
+ "brochure": productBasePath + "Brochure.html",
+ "certificates": productBasePath + "Certificates.html",
+ "pocket folders": productBasePath + "PocketFolders.html",
+ "thank you cards": productBasePath + "ThankYouCards.html",
+ "label & sticker": productBasePath + "LabelSticker.html",
+ "pvc sticker": productBasePath + "PVCSticker.html",
+ "vinyl sticker": productBasePath + "VinylSticker.html",
+ "flyers": productBasePath + "Flyers.html",
+ "menu card": productBasePath + "MenuCard.html",
+ "poster a3": productBasePath + "PosterA3.html",
+ "tent card": productBasePath + "TentCard.html",
+ "calendar": productBasePath + "Calendar.html",
+ "table calendar": productBasePath + "TableCalendar.html",
+ "packaging box": productBasePath + "PackagingBox.html",
+ "wedding invitations": productBasePath + "WeddingInvitations.html",
+ "bill books": productBasePath + "BillBooks.html",
+ "cash vouchers": productBasePath + "CashVouchers.html",
+ "challan book": productBasePath + "ChallanBook.html",
+ "pamphlet b/w": productBasePath + "PamphletBW.html",
+ "notebooks": productBasePath + "Notebooks.html",
+ "pen": productBasePath + "Pen.html",
+ "diary": productBasePath + "Diary.html",
+ "t-shirt": productBasePath + "TShirt.html",
+ "caps": productBasePath + "Caps.html",
+ "corporate gifts": productBasePath + "CorporateGifts.html",
+ "key rings": productBasePath + "KeyRings.html",
+ "shippers": productBasePath + "Shippers.html",
+ "mugs": productBasePath + "Mugs.html",
+ "lanyards": productBasePath + "Lanyards.html",
+ "id cards": productBasePath + "IDCards.html",
+ "carry bags": productBasePath + "CarryBags.html",
+ "awards": productBasePath + "Awards.html",
+ "stamps": productBasePath + "Stamps.html",
+ "tag": productBasePath + "Tag.html",
+ "flex/banner": productBasePath + "FlexBanner.html",
+ "canopy": productBasePath + "Canopy.html",
+ "glass frosted film": productBasePath + "GlassFrostedFilm.html",
+ "glow sign board": productBasePath + "GlowSignBoard.html",
+ "one way vision": productBasePath + "OneWayVision.html",
+ "standy": productBasePath + "Standy.html",
+ "branding vinyl": productBasePath + "BrandingVinyl.html",
+ "backdrop": productBasePath + "Backdrop.html",
+ "sunboard": productBasePath + "Sunboard.html",
+ "acrylic vinyl board": productBasePath + "AcrylicVinylBoard.html",
+ "canvas": productBasePath + "Canvas.html",
+ "name plate": productBasePath + "Nameplate.html",
+ "clipon": productBasePath + "Clipon.html"
  };
  
  document.getElementById('search-icon').addEventListener('click', function() {
@@ -181,3 +185,61 @@ document.addEventListener('DOMContentLoaded', function() {
          }
      }
  });
+
+
+// Product page slider functionality
+let productSlideIndex = 0;
+
+function showSlides() {
+    let slides = document.querySelectorAll(".slides img");
+    if (slides.length > 0) {
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        productSlideIndex++;
+        if (productSlideIndex > slides.length) {
+            productSlideIndex = 1;
+        }
+        slides[productSlideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+}
+
+function plusSlides(n) {
+    let slides = document.querySelectorAll(".slides img");
+    if (slides.length > 0) {
+        productSlideIndex += n;
+        if (productSlideIndex > slides.length) {
+            productSlideIndex = 1;
+        }
+        if (productSlideIndex < 1) {
+            productSlideIndex = slides.length;
+        }
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[productSlideIndex - 1].style.display = "block";
+    }
+}
+
+// Initialize slider when page loads
+document.addEventListener('DOMContentLoaded', function() {
+    // Initialize product page slider
+    showSlides();
+    
+    // Add event listeners for slider controls
+    const prevButton = document.querySelector(".prev");
+    const nextButton = document.querySelector(".next");
+    
+    if (prevButton) {
+        prevButton.addEventListener("click", function () {
+            plusSlides(-1);
+        });
+    }
+    
+    if (nextButton) {
+        nextButton.addEventListener("click", function () {
+            plusSlides(1);
+        });
+    }
+});
