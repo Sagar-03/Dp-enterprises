@@ -3,76 +3,282 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tent Card - DP Enterprises</title>
+    <title>Tent Cards - Professional Table Displays | DP Enterprises</title>
+    <meta name="description" content="Professional tent cards for table displays, events, and promotions. Custom printing, premium card stock, and eye-catching designs at DP Enterprises.">
+    <meta name="keywords" content="tent cards, table displays, menu cards, promotional displays, event signage, table tents, custom tent cards">
     <link rel="stylesheet" href="../../Css/Visitingcard.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
     <div class="whatsapp-icon">
-        <a href="https://wa.me/+919911322519" target="_blank">
+        <a href="https://wa.me/+919911322519" target="_blank" aria-label="Contact us on WhatsApp">
             <i class="fab fa-whatsapp"></i>
         </a>
     </div>
-    <main>
-        <nav>
-            <div class="logo">
-                <a href="../../index.html">
-                    <img src="../../images/logo.png" alt="logo" class="logo">
-                </a>
-            </div>
-            <input type="checkbox" class="toggle-menu" id="burger">
-            <label for="burger">
-                <div class="hamburger"></div>
-            </label>
-            <div class="head">
-               <a href="../../index.html" class="nav-link" style="text-decoration: none;">Home</a>
-                <div class="dropdown">
-                    <a class="nav-link" style="text-decoration: none;">Products</a>
-                    <div class="dropdown-content">
-                        <!-- ...same as Visitingcard.html... -->
-                    </div>
+
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="../../images/logo.png" alt="DP Enterprises Logo">
                 </div>
-                <a href="../about.html" class="nav-link" style="text-decoration: none;">About Us</a>
-                <a href="../contact.html" class="nav-link" style="text-decoration: none;">Contact Us</a>
-            </div>
-            <div class="search-container">
-                <div class="search-icon" id="search-icon">&#128269;</div>
-                <input type="text" id="search-input" placeholder="Search products..." autocomplete="off">
-                <div id="suggestions"></div>
+                <ul class="nav-menu">
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Products <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="Visitingcard.html">Visiting Cards</a>
+                            <a href="Brochure.html">Brochures</a>
+                            <a href="Flyers.html">Flyers</a>
+                            <a href="Letterheads.html">Letterheads</a>
+                            <a href="Envelopes.html">Envelopes</a>
+                            <a href="BillBook.html">Bill Books</a>
+                            <a href="Notebooks.html">Notebooks</a>
+                            <a href="Calendar.html">Calendars</a>
+                            <a href="Poster.html">Posters</a>
+                            <a href="Banner.html">Banners</a>
+                            <a href="Standy.html">Standees</a>
+                            <a href="TentCard.html">Tent Cards</a>
+                            <a href="TShirt.html">T-Shirts</a>
+                            <a href="Mugs.html">Mugs</a>
+                            <a href="PVCSticker.html">PVC Stickers</a>
+                            <a href="VinylSticker.html">Vinyl Stickers</a>
+                        </div>
+                    </li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+                <div class="search-container">
+                    <input type="text" placeholder="Search products..." id="searchInput">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </nav>
-        <div class="banner">
-            <img src="../../images/Banner/tentcard.jpg" alt="Tent Card">
-        </div>
-        <div class="image">
-            <div class="polo">
-                <div class="up slider">
-                    <button class="prev">&#10094;</button>
-                    <div class="slides">
-                        <img src="../../images/productimage/tent card/Artboard 1.jpg" alt="Tent Card">
-                        <img src="../../images/productimage/tent card/Artboard 2.jpg" alt="Tent Card">
-                        <img src="../../images/productimage/tent card/Artboard 3.jpg" alt="Tent Card">
-                        <img src="../../images/productimage/tent card/Artboard 4.jpg" alt="Tent Card">
-                        <img src="../../images/productimage/tent card/Artboard 5.jpg" alt="Tent Card">
+    </header>
+
+    <main>
+        <!-- Banner Section -->
+        <section class="banner-section">
+            <div class="banner-image">
+                <img src="../../images/Banner/tentcard.jpg" alt="Professional Tent Cards and Table Displays">
+                <div class="banner-overlay">
+                    <h1>Professional Tent Cards</h1>
+                    <p>Eye-Catching Table Displays for Every Occasion</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Section -->
+        <section class="product-section">
+            <div class="container">
+                <h2>Premium Tent Cards & Table Displays</h2>
+                
+                <!-- Image Slider -->
+                <div class="product-slider">
+                    <div class="slider-container">
+                        <img src="../../images/productimage/tent card/Tent card.jpg" alt="Professional Tent Card Display" class="active">
+                        <img src="../../images/productimage/tent card/Artboard 1.jpg" alt="Custom Tent Card Design">
+                        <img src="../../images/productimage/tent card/Artboard 2.jpg" alt="Table Display Card">
+                        <img src="../../images/productimage/tent card/Artboard 3.jpg" alt="Event Tent Card">
+                        <img src="../../images/productimage/tent card/Artboard 4.jpg" alt="Promotional Tent Card">
+                        <img src="../../images/productimage/tent card/Artboard 5.jpg" alt="Menu Tent Card">
                     </div>
-                    <button class="next">&#10095;</button>
+                    <button class="slider-btn prev-btn" onclick="changeSlide(-1)">&#10094;</button>
+                    <button class="slider-btn next-btn" onclick="changeSlide(1)">&#10095;</button>
+                    <div class="slider-dots">
+                        <span class="dot active" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(5)"></span>
+                        <span class="dot" onclick="currentSlide(6)"></span>
+                    </div>
+                </div>
+
+                <!-- Product Information -->
+                <div class="product-info">
+                    <div class="info-grid">
+                        <div class="info-card">
+                            <h3><i class="fas fa-eye"></i> Attention-Grabbing</h3>
+                            <p>Professional tent cards designed to capture attention and effectively communicate your message at restaurants, events, and retail locations.</p>
+                        </div>
+                        <div class="info-card">
+                            <h3><i class="fas fa-layer-group"></i> Premium Materials</h3>
+                            <p>High-quality card stock with excellent durability and professional appearance. Choose from various weights and finishes for the perfect look.</p>
+                        </div>
+                        <div class="info-card">
+                            <h3><i class="fas fa-paint-brush"></i> Custom Designs</h3>
+                            <p>Full-color printing with vibrant graphics and sharp text. Completely customizable designs to match your brand and promotional needs.</p>
+                        </div>
+                        <div class="info-card">
+                            <h3><i class="fas fa-shapes"></i> Versatile Formats</h3>
+                            <p>Available in standard and custom sizes with various folding options. Perfect for menus, promotions, information displays, and special announcements.</p>
+                        </div>
+                    </div>
+
+                    <div class="features-section">
+                        <h3>Product Features</h3>
+                        <div class="features-grid">
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Multiple sizes available (A4, A5, custom dimensions)</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Premium card stock (250-350 GSM)</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Matte or glossy finish options</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Double-sided printing available</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Easy assembly and setup</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Water-resistant coating option</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="applications-section">
+                        <h3>Perfect For</h3>
+                        <ul class="applications-list">
+                            <li><i class="fas fa-utensils"></i> Restaurant menus and specials</li>
+                            <li><i class="fas fa-calendar-alt"></i> Event announcements and information</li>
+                            <li><i class="fas fa-store"></i> Retail promotions and product highlights</li>
+                            <li><i class="fas fa-building"></i> Hotel and hospitality services</li>
+                            <li><i class="fas fa-handshake"></i> Trade shows and exhibitions</li>
+                            <li><i class="fas fa-info-circle"></i> Information displays and instructions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <div class="container">
+                <h2>Get Your Custom Tent Cards Today</h2>
+                <p>Ready to create professional table displays that effectively communicate your message? Contact our design team for custom tent card solutions.</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 99113 22519</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@dpenterprises.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>WhatsApp: +91 99113 22519</span>
+                    </div>
+                </div>
+                <a href="../contact.html" class="cta-button">Request Quote</a>
+            </div>
+        </section>
+
+        <!-- Related Images Gallery -->
+        <section class="gallery-section">
+            <div class="container">
+                <h2>Our Tent Card Portfolio</h2>
+                <div class="image-gallery">
+                    <div class="gallery-item">
+                        <img src="../../images/productimage/tent card/Tent card.jpg" alt="Professional Tent Card Display">
+                        <div class="gallery-overlay">
+                            <h4>Professional Display</h4>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../../images/productimage/tent card/Artboard 1.jpg" alt="Custom Tent Card Design">
+                        <div class="gallery-overlay">
+                            <h4>Custom Design</h4>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../../images/productimage/tent card/Artboard 2.jpg" alt="Table Display Card">
+                        <div class="gallery-overlay">
+                            <h4>Table Display</h4>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../../images/productimage/tent card/Artboard 3.jpg" alt="Event Tent Card">
+                        <div class="gallery-overlay">
+                            <h4>Event Card</h4>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../../images/productimage/tent card/Artboard 4.jpg" alt="Promotional Tent Card">
+                        <div class="gallery-overlay">
+                            <h4>Promotional Card</h4>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../../images/productimage/tent card/Artboard 5.jpg" alt="Menu Tent Card">
+                        <div class="gallery-overlay">
+                            <h4>Menu Card</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>DP Enterprises</h3>
+                <p>Your trusted partner for all printing and promotional solutions. Quality products, professional service, and competitive prices.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../about.html">About Us</a></li>
+                    <li><a href="Visitingcard.html">Products</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Popular Products</h4>
+                <ul>
+                    <li><a href="Visitingcard.html">Visiting Cards</a></li>
+                    <li><a href="Brochure.html">Brochures</a></li>
+                    <li><a href="Banner.html">Banners</a></li>
+                    <li><a href="TentCard.html">Tent Cards</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <div class="contact-details">
+                    <p><i class="fas fa-phone"></i> +91 99113 22519</p>
+                    <p><i class="fas fa-envelope"></i> info@dpenterprises.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Your Business Address</p>
                 </div>
             </div>
         </div>
-        <div class="details">
-            <h2>Tent Card Printing</h2>
-            <ul>
-                <li>Custom sizes and shapes available</li>
-                <li>High-quality card stock</li>
-                <li>Full color printing</li>
-                <li>Perfect for table displays, events, and promotions</li>
-                <li>Glossy or matte finish options</li>
-            </ul>
+        <div class="footer-bottom">
+            <p>&copy; 2024 DP Enterprises. All rights reserved. | Designed for professional printing solutions.</p>
         </div>
-        <footer>
-            <p>&copy; 2024 DP Enterprises. All rights reserved.</p>
-        </footer>
-    </main>
+    </footer>
+
     <script src="../main.js"></script>
 </body>
 </html>

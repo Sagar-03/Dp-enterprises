@@ -3,33 +3,282 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wedding Invitations - DP Enterprises</title>
+    <title>Wedding Invitations - Elegant Wedding Cards | DP Enterprises</title>
+    <meta name="description" content="Beautiful wedding invitations and cards with premium printing. Custom designs, elegant finishes, and memorable wedding stationery at DP Enterprises.">
+    <meta name="keywords" content="wedding invitations, wedding cards, custom wedding invitations, elegant invitations, wedding stationery, premium wedding cards">
     <link rel="stylesheet" href="../../Css/Visitingcard.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
     <div class="whatsapp-icon">
-        <a href="https://wa.me/+919911322519" target="_blank">
+        <a href="https://wa.me/+919911322519" target="_blank" aria-label="Contact us on WhatsApp">
             <i class="fab fa-whatsapp"></i>
         </a>
     </div>
-    <main>
-        <!-- Navigation copied from Visitingcard.html -->
-        <!-- ...existing code... -->
-        <section class="product-section">
-            <h1>Wedding Invitations</h1>
-            <div class="slider">
-                <img src="../../images/productimage/weddingcards/Artboard 1.jpg" alt="Wedding Invitation 1">
-                <img src="../../images/productimage/weddingcards/Artboard 2.jpg" alt="Wedding Invitation 2">
+
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="../../images/logo.png" alt="DP Enterprises Logo">
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Products <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="Visitingcard.html">Visiting Cards</a>
+                            <a href="Brochure.html">Brochures</a>
+                            <a href="Flyers.html">Flyers</a>
+                            <a href="Letterheads.html">Letterheads</a>
+                            <a href="Envelopes.html">Envelopes</a>
+                            <a href="BillBook.html">Bill Books</a>
+                            <a href="Notebooks.html">Notebooks</a>
+                            <a href="Calendar.html">Calendars</a>
+                            <a href="Poster.html">Posters</a>
+                            <a href="Banner.html">Banners</a>
+                            <a href="Standy.html">Standees</a>
+                            <a href="WeddingInvitations.html">Wedding Invitations</a>
+                            <a href="TShirt.html">T-Shirts</a>
+                            <a href="Mugs.html">Mugs</a>
+                            <a href="PVCSticker.html">PVC Stickers</a>
+                            <a href="VinylSticker.html">Vinyl Stickers</a>
+                        </div>
+                    </li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+                <div class="search-container">
+                    <input type="text" placeholder="Search products..." id="searchInput">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
-            <ul>
-                <li>Elegant and customizable wedding invitation cards</li>
-                <li>Premium paper and print quality</li>
-                <li>Wide range of designs and finishes</li>
-            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Banner Section -->
+        <section class="banner-section">
+            <div class="banner-image">
+                <img src="../../images/Banner/weddingcard.jpg" alt="Elegant Wedding Invitations and Cards">
+                <div class="banner-overlay">
+                    <h1>Wedding Invitations</h1>
+                    <p>Elegant Cards for Your Special Day</p>
+                </div>
+            </div>
         </section>
-        <!-- ...existing code... -->
+
+        <!-- Product Section -->
+        <section class="product-section">
+            <div class="container">
+                <h2>Elegant Wedding Invitations & Cards</h2>
+                
+                <!-- Image Slider -->
+                <div class="product-slider">
+                    <div class="slider-container">
+                        <img src="../../images/productimage/weddingcards/Wedding Card copy.jpg" alt="Elegant Wedding Invitation" class="active">
+                        <img src="../../images/productimage/weddingcards/Artboard 1.jpg" alt="Custom Wedding Card Design">
+                        <img src="../../images/productimage/weddingcards/Artboard 2.jpg" alt="Premium Wedding Invitation">
+                        <img src="../../images/productimage/weddingcards/Artboard 3.jpg" alt="Luxury Wedding Card">
+                        <img src="../../images/productimage/weddingcards/Artboard 4.jpg" alt="Traditional Wedding Invitation">
+                        <img src="../../images/productimage/weddingcards/Artboard 5.jpg" alt="Modern Wedding Card">
+                    </div>
+                    <button class="slider-btn prev-btn" onclick="changeSlide(-1)">&#10094;</button>
+                    <button class="slider-btn next-btn" onclick="changeSlide(1)">&#10095;</button>
+                    <div class="slider-dots">
+                        <span class="dot active" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(5)"></span>
+                        <span class="dot" onclick="currentSlide(6)"></span>
+                    </div>
+                </div>
+
+                <!-- Product Information -->
+                <div class="product-info">
+                    <div class="info-grid">
+                        <div class="info-card">
+                            <h3><i class="fas fa-heart"></i> Memorable Designs</h3>
+                            <p>Beautiful wedding invitations that capture the essence of your special day. Elegant designs that create lasting first impressions for your guests.</p>
+                        </div>
+                        <div class="info-card">
+                            <h3><i class="fas fa-gem"></i> Premium Quality</h3>
+                            <p>Luxury paper stocks and premium printing techniques ensure your wedding invitations reflect the importance and elegance of your celebration.</p>
+                        </div>
+                        <div class="info-card">
+                            <h3><i class="fas fa-palette"></i> Custom Designs</h3>
+                            <p>Completely customizable designs to match your wedding theme, colors, and personal style. From traditional to modern, we create invitations that are uniquely yours.</p>
+                        </div>
+                        <div class="info-card">
+                            <h3><i class="fas fa-star"></i> Special Finishes</h3>
+                            <p>Enhance your invitations with special finishes including foil stamping, embossing, laser cutting, and premium envelopes for an unforgettable presentation.</p>
+                        </div>
+                    </div>
+
+                    <div class="features-section">
+                        <h3>Product Features</h3>
+                        <div class="features-grid">
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Premium paper stocks (250-350 GSM)</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Multiple size options (A5, A4, custom)</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Foil stamping in gold, silver, and colors</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Embossing and debossing options</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Laser cutting and die-cutting available</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Matching envelopes and RSVP cards</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="applications-section">
+                        <h3>Perfect For</h3>
+                        <ul class="applications-list">
+                            <li><i class="fas fa-ring"></i> Wedding ceremony invitations</li>
+                            <li><i class="fas fa-glass-cheers"></i> Reception and party invitations</li>
+                            <li><i class="fas fa-heart"></i> Engagement announcements</li>
+                            <li><i class="fas fa-calendar-check"></i> Save the date cards</li>
+                            <li><i class="fas fa-gift"></i> Wedding shower invitations</li>
+                            <li><i class="fas fa-users"></i> Rehearsal dinner invitations</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <div class="container">
+                <h2>Create Your Perfect Wedding Invitations</h2>
+                <p>Ready to design beautiful wedding invitations that reflect your unique love story? Contact our design team for personalized consultation and samples.</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 99113 22519</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@dpenterprises.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>WhatsApp: +91 99113 22519</span>
+                    </div>
+                </div>
+                <a href="../contact.html" class="cta-button">Request Quote</a>
+            </div>
+        </section>
+
+        <!-- Related Images Gallery -->
+        <section class="gallery-section">
+            <div class="container">
+                <h2>Our Wedding Invitation Portfolio</h2>
+                <div class="image-gallery">
+                    <div class="gallery-item">
+                        <img src="../../images/productimage/weddingcards/Wedding Card copy.jpg" alt="Elegant Wedding Invitation">
+                        <div class="gallery-overlay">
+                            <h4>Elegant Design</h4>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../../images/productimage/weddingcards/Artboard 1.jpg" alt="Custom Wedding Card Design">
+                        <div class="gallery-overlay">
+                            <h4>Custom Design</h4>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../../images/productimage/weddingcards/Artboard 2.jpg" alt="Premium Wedding Invitation">
+                        <div class="gallery-overlay">
+                            <h4>Premium Quality</h4>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../../images/productimage/weddingcards/Artboard 3.jpg" alt="Luxury Wedding Card">
+                        <div class="gallery-overlay">
+                            <h4>Luxury Finish</h4>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../../images/productimage/weddingcards/Artboard 4.jpg" alt="Traditional Wedding Invitation">
+                        <div class="gallery-overlay">
+                            <h4>Traditional Style</h4>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../../images/productimage/weddingcards/Artboard 5.jpg" alt="Modern Wedding Card">
+                        <div class="gallery-overlay">
+                            <h4>Modern Style</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>DP Enterprises</h3>
+                <p>Your trusted partner for all printing and promotional solutions. Quality products, professional service, and competitive prices.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../about.html">About Us</a></li>
+                    <li><a href="Visitingcard.html">Products</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Popular Products</h4>
+                <ul>
+                    <li><a href="Visitingcard.html">Visiting Cards</a></li>
+                    <li><a href="Brochure.html">Brochures</a></li>
+                    <li><a href="Banner.html">Banners</a></li>
+                    <li><a href="WeddingInvitations.html">Wedding Invitations</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <div class="contact-details">
+                    <p><i class="fas fa-phone"></i> +91 99113 22519</p>
+                    <p><i class="fas fa-envelope"></i> info@dpenterprises.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Your Business Address</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 DP Enterprises. All rights reserved. | Designed for professional printing solutions.</p>
+        </div>
+    </footer>
+
     <script src="../main.js"></script>
 </body>
 </html>
