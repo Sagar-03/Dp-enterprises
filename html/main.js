@@ -38,93 +38,108 @@ setInterval(showNextSlide, 3000);
 // //Slider//
 
 let slideIndex = 0;
-const slides = document.querySelectorAll('.slide-track .slide');
-const slideTrack = document.querySelector('.slide-track');
-const nextButton = document.getElementById('nextBtn');
-const prevButton = document.getElementById('prevBtn');
-const slideWidth = slides[0].getBoundingClientRect().width;
-const totalSlides = slides.length;
+let slides, slideTrack, nextButton, prevButton, slideWidth, totalSlides;
 
-// Update slide track width to fit all slides
-slideTrack.style.width = `${totalSlides * slideWidth}px`;
-
-// Update slide position
-function updateSlidePosition() {
-    const offset = -slideIndex * slideWidth;
-    slideTrack.style.transform = `translateX(${offset}px)`;
-}
-
-updateSlidePosition();
-
-nextButton.addEventListener('click', () => {
-    if (slideIndex < totalSlides - 1) {
-        slideIndex++;
+// Initialize slider when DOM is loaded
+document.addEventListener('DOMContentLoaded', function() {
+    slides = document.querySelectorAll('.slide-track .slide');
+    slideTrack = document.querySelector('.slide-track');
+    nextButton = document.getElementById('nextBtn');
+    prevButton = document.getElementById('prevBtn');
+    
+    if (slides.length > 0 && slideTrack && nextButton && prevButton) {
+        slideWidth = slides[0].getBoundingClientRect().width;
+        totalSlides = slides.length;
+        
+        // Update slide track width to fit all slides
+        slideTrack.style.width = `${totalSlides * slideWidth}px`;
+        
+        // Update slide position
+        function updateSlidePosition() {
+            const offset = -slideIndex * slideWidth;
+            slideTrack.style.transform = `translateX(${offset}px)`;
+        }
+        
         updateSlidePosition();
-    }
-});
-
-prevButton.addEventListener('click', () => {
-    if (slideIndex > 0) {
-        slideIndex--;
-        updateSlidePosition();
+        
+        nextButton.addEventListener('click', () => {
+            if (slideIndex < totalSlides - 5) { // Show 5 slides at a time
+                slideIndex++;
+                updateSlidePosition();
+            }
+        });
+        
+        prevButton.addEventListener('click', () => {
+            if (slideIndex > 0) {
+                slideIndex--;
+                updateSlidePosition();
+            }
+        });
+        
+        // Handle window resize
+        window.addEventListener('resize', () => {
+            slideWidth = slides[0].getBoundingClientRect().width;
+            slideTrack.style.width = `${totalSlides * slideWidth}px`;
+            updateSlidePosition();
+        });
     }
 });
 
 
  // <!--Search box js-->
  const products = {
-    "visiting cards": "Visitingcards.html",
- "letter heads": "Letterheads.html",
- "envelopes": "Envelopes.html",
- "books": "Books.html",
- "booklet": "Booklet.html",
- "brochure": "Brochure.html",
- "certificates": "Certificates.html",
- "pocket folders": "PocketFolders.html",
- "thank you cards": "ThankYouCards.html",
- "label & sticker": "LabelSticker.html",
- "pvc sticker": "PVCSticker.html",
- "vinyl sticker": "VinylSticker.html",
- "flyers": "Flyers.html",
- "menu card": "MenuCard.html",
- "poster a3": "PosterA3.html",
- "tent card": "TentCard.html",
- "calendar": "Calendar.html",
- "table calendar": "TableCalendar.html",
- "packaging box": "PackagingBox.html",
- "wedding invitations": "WeddingInvitations.html",
- "bill books": "BillBooks.html",
- "cash vouchers": "CashVouchers.html",
- "challan book": "ChallanBook.html",
- "pamphlet b/w": "PamphletBW.html",
- "notebooks": "Notebooks.html",
- "pen": "Pen.html",
- "diary": "Diary.html",
- "t-shirt": "TShirt.html",
- "caps": "Caps.html",
- "corporate gifts": "CorporateGifts.html",
- "key rings": "KeyRings.html",
- "shippers": "Shippers.html",
- "mugs": "Mugs.html",
- "lanyards": "Lanyards.html",
- "id cards": "IDCards.html",
- "carry bags": "CarryBags.html",
- "awards": "Awards.html",
- "stamps": "Stamps.html",
- "tag": "Tag.html",
- "flex/banner": "FlexBanner.html",
- "canopy": "Canopy.html",
- "glass frosted film": "GlassFrostedFilm.html",
- "glow sign board": "GlowSignBoard.html",
- "one way vision": "OneWayVision.html",
- "standy": "Standy.html",
- "branding vinyl": "BrandingVinyl.html",
- "backdrop": "Backdrop.html",
- "sunboard": "Sunboard.html",
- "acrylic vinyl board": "AcrylicVinylBoard.html",
- "canvas": "Canvas.html",
- "name plate": "Nameplate.html",
- "clipon": "Clipon.html"
+    "visiting cards": "html/Products/Visitingcard.html",
+ "letter heads": "html/Products/Letterheads.html",
+ "envelopes": "html/Products/Envelopes.html",
+ "books": "html/Products/Books.html",
+ "booklet": "html/Products/Booklet.html",
+ "brochure": "html/Products/Brochure.html",
+ "certificates": "html/Products/Certificates.html",
+ "pocket folders": "html/Products/PocketFolders.html",
+ "thank you cards": "html/Products/ThankYouCards.html",
+ "label & sticker": "html/Products/LabelSticker.html",
+ "pvc sticker": "html/Products/PVCSticker.html",
+ "vinyl sticker": "html/Products/VinylSticker.html",
+ "flyers": "html/Products/Flyers.html",
+ "menu card": "html/Products/MenuCard.html",
+ "poster a3": "html/Products/PosterA3.html",
+ "tent card": "html/Products/TentCard.html",
+ "calendar": "html/Products/Calendar.html",
+ "table calendar": "html/Products/TableCalendar.html",
+ "packaging box": "html/Products/PackagingBox.html",
+ "wedding invitations": "html/Products/WeddingInvitations.html",
+ "bill books": "html/Products/BillBooks.html",
+ "cash vouchers": "html/Products/CashVouchers.html",
+ "challan book": "html/Products/ChallanBook.html",
+ "pamphlet b/w": "html/Products/PamphletBW.html",
+ "notebooks": "html/Products/Notebooks.html",
+ "pen": "html/Products/Pen.html",
+ "diary": "html/Products/Diary.html",
+ "t-shirt": "html/Products/TShirt.html",
+ "caps": "html/Products/Caps.html",
+ "corporate gifts": "html/Products/CorporateGifts.html",
+ "key rings": "html/Products/KeyRings.html",
+ "shippers": "html/Products/Shippers.html",
+ "mugs": "html/Products/Mugs.html",
+ "lanyards": "html/Products/Lanyards.html",
+ "id cards": "html/Products/IDCards.html",
+ "carry bags": "html/Products/CarryBags.html",
+ "awards": "html/Products/Awards.html",
+ "stamps": "html/Products/Stamps.html",
+ "tag": "html/Products/Tag.html",
+ "flex/banner": "html/Products/FlexBanner.html",
+ "canopy": "html/Products/Canopy.html",
+ "glass frosted film": "html/Products/GlassFrostedFilm.html",
+ "glow sign board": "html/Products/GlowSignBoard.html",
+ "one way vision": "html/Products/OneWayVision.html",
+ "standy": "html/Products/Standy.html",
+ "branding vinyl": "html/Products/BrandingVinyl.html",
+ "backdrop": "html/Products/Backdrop.html",
+ "sunboard": "html/Products/Sunboard.html",
+ "acrylic vinyl board": "html/Products/AcrylicVinylBoard.html",
+ "canvas": "html/Products/Canvas.html",
+ "name plate": "html/Products/Nameplate.html",
+ "clipon": "html/Products/Clipon.html"
  };
  
  document.getElementById('search-icon').addEventListener('click', function() {
