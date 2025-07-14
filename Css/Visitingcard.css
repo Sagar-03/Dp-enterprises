@@ -606,18 +606,228 @@ footer .copyright {
 }
 
 
-@media (max-width: 500px) {
+/* ============ RESPONSIVE MEDIA QUERIES ============ */
+
+/* Extra Small Mobile Devices (320px - 480px) */
+@media (max-width: 480px) {
     .toggle-menu, .hamburger {
         display: block;
         z-index: 3;
     }
     
+    nav {
+        padding: 10px 15px;
+        height: 70px;
+    }
+    
     .logo {
         position: absolute;
-        top: 10px; /* Space from the top */
-        right: 10px; /* Move towards the right */
-        width: 120px; /* Adjusted size */
-        height: 60px; /* Adjusted size */
+        top: 10px;
+        left: 10px;
+        width: 120px;
+        height: 50px;
+        margin: 0;
+    }
+    
+    .logo img {
+        width: 120px;
+        height: auto;
+        margin: 0;
+    }
+    
+    .head {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background: #cc373c;
+        width: 280px;
+        height: 100%;
+        padding-top: 80px;
+        z-index: 1;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .head a {
+        padding: 20px;
+        font-size: 1rem;
+        color: white;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .dropdown-content {
+        position: static;
+        width: 100%;
+        min-width: auto;
+        box-shadow: none;
+        background: rgba(0, 0, 0, 0.1);
+        flex-direction: column;
+    }
+    
+    nav input:checked ~ .head {
+        transform: translateX(0);
+    }
+    
+    .search-container {
+        display: none;
+    }
+    
+    .banner img {
+        width: 100vw;
+        height: auto;
+    }
+    
+    main .image {
+        width: 95%;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .image .polo {
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+    }
+    
+    .image .polo .up {
+        width: 100%;
+        height: 250px;
+        margin: 0;
+        transform: none;
+    }
+    
+    .image .polo .up .slides {
+        width: 100%;
+        height: 250px;
+    }
+    
+    .image .polo .up .slides img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+    
+    .image .right {
+        width: 100%;
+        margin: 20px 0;
+        position: static;
+    }
+    
+    .image .right .sub {
+        font-size: 24px;
+        margin: 20px 0;
+        text-align: center;
+    }
+    
+    .image .right ul {
+        margin: 10px 20px;
+    }
+    
+    .image .right ul li {
+        font-size: 14px;
+        margin: 8px 0;
+    }
+    
+    .image .right .stock {
+        font-size: 18px;
+        text-align: center;
+        margin: 20px 0;
+    }
+    
+    .image .right .standard {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+        gap: 15px;
+    }
+    
+    .image .right .standard div {
+        width: 80%;
+        padding: 12px;
+    }
+    
+    .cards .box p {
+        font-size: 1.5rem;
+        margin: 20px 0;
+    }
+    
+    .card {
+        flex: 0 0 200px;
+        height: 200px;
+        margin: 0 5px;
+    }
+    
+    .card img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    footer {
+        height: auto;
+        padding: 20px 10px;
+    }
+    
+    footer .row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+    
+    .footerlogo {
+        width: 150px;
+        height: auto;
+        margin: 0;
+        padding: 20px;
+    }
+    
+    footer .Links, .contacts {
+        margin: 0;
+        width: 100%;
+    }
+    
+    footer ul {
+        margin-top: 20px;
+    }
+    
+    footer .copyright {
+        margin: 30px 0 0 0;
+        font-size: 12px;
+        text-align: center;
+    }
+}
+
+/* Small Mobile Devices (481px - 600px) */
+@media (min-width: 481px) and (max-width: 600px) {
+    .toggle-menu, .hamburger {
+        display: block;
+        z-index: 3;
+    }
+    
+    nav {
+        padding: 12px 20px;
+        height: 75px;
+    }
+    
+    .logo {
+        position: absolute;
+        top: 12px;
+        left: 15px;
+        width: 130px;
+        height: 55px;
+        margin: 0;
+    }
+    
+    .logo img {
+        width: 130px;
+        height: auto;
+        margin: 0;
     }
     
     .head {
@@ -631,142 +841,545 @@ footer .copyright {
         background: #cc373c;
         width: 300px;
         height: 100%;
-        padding-top: 65px;
+        padding-top: 80px;
         z-index: 1;
         transform: translateX(100%);
         transition: transform 0.3s ease-in-out;
     }
     
-    .head a, .head a:hover {
-        padding: 30px;
-        font-size: 1rem;
-        box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
-    }
-    
-    nav input:checked ~ .head {
-        transform: translateX(0);
-    } 
-    
-    .heading {
-        text-align: right; /* Aligns the text to the right */
-    }
-    
-    .heading h1 {
-        font-size: 40px;
-        margin-right: 70px; /* Adds space on the right side */
-    }
-    .image .polo .up {
-        transform: translateX(-6%); /* Shift images towards the left */
-    }
-    .image {
-        display: flex;
+    main .image {
+        width: 95%;
         flex-direction: column;
         align-items: center;
     }
-
+    
     .image .polo {
         width: 100%;
-        margin: 0;
-    }
-
-    .image .right {
-        width: 100%;
-        padding: 10px;
-        margin-top: 20px; /* Adjust spacing if necessary */
-    }
-
-    .image .right .heading,
-    .image .right .sub,
-    .image .right ul li,
-    .image .right .stock,
-    .image .right .standard div {
-        font-size: 1rem;
-        font-weight: bolder;
-    }
-
-    .cards {
-        margin-top: 20px; /* Add margin to ensure proper spacing */
-        overflow-x: auto; /* Add horizontal scrolling if needed */
-        padding: 0 10px; /* Add horizontal padding */
-    }
-
-    .cards .box p {
-        font-size: 2rem; /* Adjust font size for small screens */
-        text-align: center;
-    }
-
-    .cards .card {
-        display: flex;
-        flex-direction: row; /* Keep cards in a row */
-        flex-wrap: nowrap; /* Prevent wrapping of cards */
-        overflow-x: auto; /* Enable horizontal scrolling */
-    }
-
-    .cards .card > div {
-        flex: 0 0 300px; /* Increase width of each card */
-        height: 350px; /* Increase height of each card */
-        margin: 0 10px; /* Spacing between images */
-    }
-
-    .cards .card img {
-        width: 100%; /* Make image occupy full width of its container */
-        height: 100%; /* Make image occupy full height of its container */
-        object-fit: cover; /* Ensure images cover the card area */
-    }
-    footer {
-        padding: 20px 10px; /* Ensure padding to keep content from touching the edges */
-        height: auto; /* Allow height to adjust automatically */
+        height: auto;
+        margin: 20px 0;
     }
     
-    footer .container {
-        padding: 0 10px; /* Padding for better spacing */
-        max-width: 100%; /* Ensure container uses full width */
+    .image .polo .up {
+        width: 100%;
+        height: 280px;
+        margin: 0;
+    }
+    
+    .image .polo .up .slides,
+    .image .polo .up .slides img {
+        width: 100%;
+        height: 280px;
+    }
+    
+    .image .right {
+        width: 100%;
+        margin: 20px 0;
+        position: static;
+    }
+    
+    .image .right .sub {
+        font-size: 26px;
+        text-align: center;
+        margin: 20px 0;
+    }
+    
+    .card {
+        flex: 0 0 220px;
+        height: 220px;
+    }
+    
+    .card img {
+        width: 220px;
+        height: 220px;
+    }
+}
+
+/* Small Tablets (601px - 768px) */
+@media (min-width: 601px) and (max-width: 768px) {
+    nav {
+        padding: 15px 25px;
+        height: 80px;
+    }
+    
+    .logo {
+        width: 140px;
+        height: 60px;
+        margin-right: 30px;
+    }
+    
+    .logo img {
+        width: 140px;
+        height: auto;
+        margin-left: 10px;
+    }
+    
+    .nav-link {
+        margin-right: 40px;
+        font-size: 18px;
+    }
+    
+    .dropdown-content {
+        min-width: 400px;
+    }
+    
+    main .image {
+        width: 95%;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .image .polo {
+        width: 90%;
+        height: auto;
+        margin: 20px 0;
+    }
+    
+    .image .polo .up {
+        width: 100%;
+        height: 300px;
+        margin: 0;
+    }
+    
+    .image .polo .up .slides,
+    .image .polo .up .slides img {
+        width: 100%;
+        height: 300px;
+    }
+    
+    .image .right {
+        width: 90%;
+        margin: 20px 0;
+        position: static;
+    }
+    
+    .image .right .sub {
+        font-size: 26px;
+        text-align: center;
+        margin: 20px 0;
+    }
+    
+    .image .right ul {
+        margin: 15px 30px;
+    }
+    
+    .image .right ul li {
+        font-size: 15px;
+    }
+    
+    .image .right .standard {
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .image .right .standard div {
+        width: 40%;
+    }
+    
+    .card {
+        flex: 0 0 240px;
+        height: 240px;
+    }
+    
+    .card img {
+        width: 240px;
+        height: 240px;
     }
     
     footer .row {
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center align items */
-        text-align: center; /* Center align text */
-        margin-top: 20px; /* Margin to provide spacing */
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
     }
     
-    .footerlogo {
-        width: 200px; /* Adjust logo width */
-        height: auto; /* Maintain aspect ratio */
-        margin: 0 auto; /* Center logo */
-        padding:20px;
-    }
-    
-    footer h5 {
-        margin-bottom: 10px; /* Adjust bottom margin */
-    }
-    
-    footer ul {
-        margin: 0; /* Remove margin */
-        padding: 0; /* Remove padding */
-    }
-    
-    footer li {
-        margin-bottom: 10px; /* Adjust bottom margin */
-    }
-    
-    footer a {
-        font-size: 14px; /* Adjust font size for better readability */
+    footer .Links, .contacts {
+        margin: 0;
     }
     
     footer .copyright {
-        margin-left: 0px;
-        margin-top: 20px; /* Adjust margin to ensure visibility */
-        font-size: 12px; /* Adjust font size for smaller screens */
-        text-align: center; /* Center align text */
-        padding-top: 10px; /* Add padding for spacing */
+        margin-left: 0;
+        text-align: center;
+        width: 100%;
     }
-    .contacts{
-        margin-left: 0px;
-        margin-top: 50px;
+}
+
+/* Large Tablets (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    nav {
+        padding: 18px 30px;
+        height: 85px;
     }
-    footer .Links{
-        margin-left: 0px;
+    
+    .logo {
+        width: 160px;
+        height: 65px;
+        margin-right: 40px;
+    }
+    
+    .logo img {
+        width: 160px;
+        height: auto;
+        margin-left: 15px;
+    }
+    
+    .nav-link {
+        margin-right: 50px;
+        font-size: 19px;
+    }
+    
+    .dropdown-content {
+        min-width: 450px;
+    }
+    
+    main .image {
+        width: 95%;
+    }
+    
+    .image .polo {
+        width: 450px;
+        height: 300px;
+    }
+    
+    .image .polo .up {
+        width: 450px;
+        height: 300px;
+        margin-top: 80px;
+        margin-left: 20px;
+    }
+    
+    .image .polo .up .slides,
+    .image .polo .up .slides img {
+        width: 450px;
+        height: 300px;
+    }
+    
+    .image .right {
+        width: 500px;
+    }
+    
+    .image .right .sub {
+        font-size: 28px;
+        margin-left: 30px;
+        margin-top: 70px;
+    }
+    
+    .image .right ul {
+        margin-left: 5%;
+    }
+    
+    .image .right ul li {
+        font-size: 14px;
+    }
+    
+    .image .right .stock {
+        margin-left: 40px;
+    }
+    
+    .image .right .standard {
+        margin-left: 35px;
+    }
+    
+    .card {
+        flex: 0 0 250px;
+        height: 250px;
+    }
+    
+    .card img {
+        width: 350px;
+        height: auto;
+    }
+    
+    footer .Links {
+        margin-left: 100px;
+    }
+    
+    .contacts {
+        margin-left: 150px;
+    }
+    
+    footer .copyright {
+        margin-left: 300px;
+    }
+}
+
+/* Small Laptops (1025px - 1366px) */
+@media (min-width: 1025px) and (max-width: 1366px) {
+    nav {
+        padding: 20px 35px;
+        height: 88px;
+    }
+    
+    .logo {
+        width: 170px;
+        height: 68px;
+        margin-right: 50px;
+    }
+    
+    .logo img {
+        width: 170px;
+        height: auto;
+        margin-left: 15px;
+    }
+    
+    .nav-link {
+        margin-right: 60px;
+        font-size: 19px;
+    }
+    
+    .dropdown-content {
+        min-width: 480px;
+    }
+    
+    main .image {
+        width: 96%;
+    }
+    
+    .image .polo {
+        width: 520px;
+        height: 350px;
+    }
+    
+    .image .polo .up {
+        width: 520px;
+        height: 350px;
+        margin-top: 90px;
+        margin-left: 25px;
+    }
+    
+    .image .polo .up .slides,
+    .image .polo .up .slides img {
+        width: 520px;
+        height: 350px;
+    }
+    
+    .image .right {
+        width: 650px;
+    }
+    
+    .image .right .sub {
+        font-size: 29px;
+        margin-left: 35px;
+        margin-top: 75px;
+    }
+    
+    .image .right ul {
+        margin-left: 6%;
+    }
+    
+    .image .right ul li {
+        font-size: 15px;
+    }
+    
+    .card {
+        flex: 0 0 250px;
+        height: 260px;
+    }
+    
+    .card img {
+        width: 400px;
+        height: auto;
+    }
+    
+    footer .Links {
+        margin-left: 120px;
+    }
+    
+    .contacts {
+        margin-left: 180px;
+    }
+    
+    footer .copyright {
+        margin-left: 400px;
+    }
+}
+
+/* Large Laptops and Small Desktops (1367px - 1920px) */
+@media (min-width: 1367px) and (max-width: 1920px) {
+    nav {
+        padding: 20px;
+        height: 90px;
+    }
+    
+    .logo {
+        width: 180px;
+        height: 70px;
+        margin-right: 60px;
+    }
+    
+    .logo img {
+        width: 170px;
+        height: auto;
+        margin-left: 15px;
+    }
+    
+    .nav-link {
+        margin-right: 70px;
+        font-size: 20px;
+    }
+    
+    main .image {
+        width: 96%;
+    }
+    
+    .image .polo {
+        width: 578px;
+        height: 384px;
+    }
+    
+    .image .polo .up {
+        width: 578px;
+        height: 384px;
+        margin-top: 105px;
+        margin-left: 30px;
+    }
+    
+    .image .polo .up .slides,
+    .image .polo .up .slides img {
+        width: 578px;
+        height: 384px;
+    }
+    
+    .image .right {
+        width: 800px;
+    }
+    
+    .card {
+        flex: 0 0 250px;
+        height: 285px;
+    }
+    
+    .card img {
+        width: 455px;
+        height: auto;
+    }
+}
+
+/* Large Desktops (1921px and above) */
+@media (min-width: 1921px) {
+    nav {
+        padding: 25px;
+        height: 100px;
+    }
+    
+    .logo {
+        width: 200px;
+        height: 80px;
+        margin-right: 80px;
+    }
+    
+    .logo img {
+        width: 190px;
+        height: auto;
+        margin-left: 20px;
+    }
+    
+    .nav-link {
+        margin-right: 80px;
+        font-size: 22px;
+    }
+    
+    .dropdown-content {
+        min-width: 600px;
+    }
+    
+    main .image {
+        width: 90%;
+        max-width: 1800px;
+        margin: 0 auto;
+    }
+    
+    .image .polo {
+        width: 650px;
+        height: 450px;
+    }
+    
+    .image .polo .up {
+        width: 650px;
+        height: 450px;
+        margin-top: 120px;
+        margin-left: 40px;
+    }
+    
+    .image .polo .up .slides,
+    .image .polo .up .slides img {
+        width: 650px;
+        height: 450px;
+    }
+    
+    .image .right {
+        width: 900px;
+    }
+    
+    .image .right .sub {
+        font-size: 32px;
+        margin-left: 50px;
+        margin-top: 100px;
+    }
+    
+    .image .right ul {
+        margin-left: 8%;
+    }
+    
+    .image .right ul li {
+        font-size: 16px;
+        margin: 1.2% 0;
+    }
+    
+    .image .right .stock {
+        font-size: 1.2rem;
+        margin-left: 60px;
+    }
+    
+    .image .right .standard {
+        margin-left: 55px;
+        height: 3rem;
+    }
+    
+    .card {
+        flex: 0 0 300px;
+        height: 350px;
+    }
+    
+    .card img {
+        width: 500px;
+        height: auto;
+    }
+    
+    footer {
+        height: 350px;
+        padding: 30px;
+    }
+    
+    .footerlogo {
+        width: 280px;
+        height: 100px;
+    }
+    
+    footer .Links {
+        margin-left: 200px;
+    }
+    
+    .contacts {
+        margin-left: 250px;
+    }
+    
+    footer .copyright {
+        margin-left: 600px;
+        font-size: 16px;
+    }
+}
+
+/* Landscape orientation for tablets */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .image .polo .up {
+        height: 280px;
+    }
+    
+    .image .polo .up .slides,
+    .image .polo .up .slides img {
+        height: 280px;
+    }
+    
+    .image .right .sub {
         margin-top: 50px;
     }
 }
